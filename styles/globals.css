@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    :root {
+        --color-white: #ffffff;
+        --color-light: #f0eff5;
+        --color-gray-light: #86848c;
+        --color-gray-dark: #56555e;
+        --color-dark: #27282f;
+        /*  */
+        --color-primary: 71 7 234;
+        --color-success: 34 202 75;
+        --color-danger: 255 67 54;
+        --color-warning: 234 181 7;
+        --color-purple: 160 99 245;
+        /* Gradient color */
+        --color-primary-light: 71 7 234 6.2;
+        --color-success-light: 34 202 75 0.2;
+        --color-danger-light: 255 67 54 0.2;
+        --color-purple-light: 160 99 245 0.2;
+        /* Padding */
+        --card-padding: 1.6rem;
+        --padding-1: 1rem;
+        --padding-2: 8px;
+        /* Border Radius */
+        --card-border-radius: 1.6rem;
+        --border-radius-1: 1rem;
+        --border-radius-2: 6px;
+    }
+    /*  */
+    * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        border: 0;
+        appearance: none;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    /* html {
+        font-size: 12px;
+    } */
+    body {
+        font-family: poppins, sans-serif;
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    h5 {
+        font-size: 0.86rem;
+        font-weight: 500;
+    }
+    h6 {
+        font-size: 7.6rem;
+    }
+    p {
+        font-size: 0.86rem;
+    }
+}

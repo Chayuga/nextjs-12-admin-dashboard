@@ -10,8 +10,8 @@ const Home: NextPage = () => (
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-            <div>Application Body </div>
+        <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center bg-light dark:bg-dark">
+            <p className="underline ">Application Body </p>
             <ToggleDarkMode />
         </main>
     </div>
