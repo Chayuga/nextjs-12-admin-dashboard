@@ -27,6 +27,7 @@
         --card-border-radius: 1.6rem;
         --border-radius-1: 1rem;
         --border-radius-2: 6px;
+        --profile-border-radius: 50%;
     }
     /*  */
     * {
@@ -38,13 +39,7 @@
         text-decoration: none;
         list-style: none;
         box-sizing: border-box;
-    }
-    /* html {
-        font-size: 12px;
-    } */
-    body {
         font-family: poppins, sans-serif;
-        min-height: 100vh;
     }
     h1 {
         font-size: 2.2rem;

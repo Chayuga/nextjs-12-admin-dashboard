@@ -14,6 +14,7 @@ module.exports = {
             desktop: "1280px",
         },
         colors: {
+            transparent: "transparent",
             white: "var(--color-white)",
             light: "var(--color-light)",
             dark: "var(--color-dark)",
@@ -32,12 +33,13 @@ module.exports = {
             "purple-light": "rgba(var( --color-purple-light)/ <alpha-value>)",
         },
 
+        borderRadius: {
+            "profile-border-radius": "var(--profile-border-radius)",
+            "card-border-radius": "var(--card-border-radius)",
+            "border-radius-1": "var(--border-radius-1)",
+            "border-radius-2": "var(--border-radius-2)",
+        },
         extend: {
-            borderRadius: {
-                "card-border-radius": "var(--card-border-radius)",
-                "border-radius-1": "var(--border-radius-1)",
-                "border-radius-2": "var(--border-radius-2)",
-            },
             padding: {
                 "card-padding": "var(--card-padding)",
                 "padding-1": "var( --padding-1)",

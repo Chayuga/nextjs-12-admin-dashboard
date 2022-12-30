@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
-import { moonDark, moonLight, sunLight, sunDark } from "../public/themes";
+import { moonDark, sunLight } from "../public/themes";
 
 const ToggleDarkMode = () => {
     const { theme, setTheme, systemTheme } = useTheme();
@@ -18,23 +18,23 @@ const ToggleDarkMode = () => {
 
     return (
         <div
-            className={`inline-flex w-32 h-[38px] py-1 pl-[5px] pr-1 gap-2.5 ${
+            className={`relative hidden desktop:inline-flex w-32 h-[38px] py-1 pl-[5px] pr-1 gap-2.5 border-2 border-[#464950] ${
                 currentTheme === "dark"
                     ? "bg-[#3B3E44] border-[#3B3E44]"
                     : "bg-[#FCFCFD] border-[#F4F5F6]"
-            }  border-[0.5px]  drop-shadow-md  rounded-lg`}
+            } drop-shadow-lg  rounded-border-radius-2`}
         >
             <button
                 type="button"
                 className={`${
-                    currentTheme === "dark" ? "bg-[#464950]" : "bg-[#FCFCFD]"
-                }  py-[3px] px-[18px] rounded-lg border-[0.5px] 
+                    currentTheme === "dark" ? "bg-[#FCFCFD]" : "bg-[#464950]"
+                }  py-[3px] px-[18px] rounded-border-radius-2 border-[0.5px]
           ${
               currentTheme === "dark" ? "border-[#3B3E44]" : "border-[#F4F5F6]"
           }  drop-shadow-md`}
             >
                 <Image
-                    src={currentTheme === "dark" ? moonLight : sunDark}
+                    src={currentTheme === "dark" ? moonDark : sunLight}
                     alt=""
                     width={17}
                     height={17}
@@ -45,7 +45,7 @@ const ToggleDarkMode = () => {
                 onClick={() =>
                     setTheme(`${currentTheme === "dark" ? "light" : "dark"}`)
                 }
-                className=" hover:bg-[#cbcccd] py-[3px] px-[18px] rounded-lg"
+                className=" hover:bg-[#cbcccd] py-[3px] px-[18px] rounded-border-radius-2"
             >
                 <Image
                     src={currentTheme === "dark" ? sunLight : moonDark}
